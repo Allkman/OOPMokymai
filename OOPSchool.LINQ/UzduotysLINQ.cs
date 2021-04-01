@@ -23,28 +23,30 @@ namespace OOPSchool.LINQ
             for (int i = 0; i < numbers01.Length; i++)
             {
                 numbers01[i] = rnd.Next(-100, 101);
-            }
-            
+            }            
         }
 
         public void CountPositive()
         {
             GenerateArray();
-            var positiveNumbers = numbers01.Count(n => n > 0);
+            positiveNumbers = numbers01.Count(n => n > 0);
             Console.WriteLine($"There are {positiveNumbers} positive numbers"); 
         }
         public void CountNegative()
         {
             GenerateArray();
-            var negativeNumbers = numbers01.Count(n => n < 0);
+            negativeNumbers = numbers01.Count(n => n < 0);
             Console.WriteLine($"There are {negativeNumbers} negative numbers");
         }
         public void CompareAndPrintHigherQuantity()
         {
             GenerateArray();
-            if (positiveNumbers - negativeNumbers == 0) Console.WriteLine("Po lygiai");
-            else if (positiveNumbers > negativeNumbers) Console.WriteLine("Teigiamu daugiau");
-            else Console.WriteLine("Neigiamu daugiau");            
+            if (positiveNumbers - negativeNumbers == 0)
+            { Console.WriteLine("Po lygiai"); }
+            else if (positiveNumbers > negativeNumbers) 
+            { Console.WriteLine("Teigiamu daugiau"); }
+            else 
+            { Console.WriteLine("Neigiamu daugiau"); }           
         }
     }
 }
