@@ -12,7 +12,11 @@ namespace OOPMokymai.P2.Models
             Gender = (int)gender;
             Hobbies = new List<Hobby>();
         }
-
+        public Human(int id, string firstName, string lastName, int gender) : base(id, firstName, lastName)
+        {
+            Gender = gender;
+            Hobbies = new List<Hobby>();
+        }
         public override int Gender { get; }
         public DateTime? BirthDate { get; }
 

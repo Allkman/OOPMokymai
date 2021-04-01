@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DeckOfCards.Enums
+﻿namespace DeckOfCards.Enums
 {
     public enum ECardSuite
     {

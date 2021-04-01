@@ -9,6 +9,10 @@ namespace OOPMokymai.P2.Models
         {
             Gender = gender != EArtificialLifeGender.ROBOT ? (int)gender : 0;
         }
+        public Artificial(int id, string firstName, int gender) : base(id, firstName)
+        {
+            Gender = gender != 2 ? (int)gender : 0;
+        }
 
         public override string RaceDiscriminator => RaceClassificators.ARTIFICIAL;
 

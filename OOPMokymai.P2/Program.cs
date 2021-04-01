@@ -1,5 +1,6 @@
 ﻿using OOPMokymai.P2.Enums;
 using OOPMokymai.P2.Models;
+using OOPSchool.P2.Services;
 using System;
 
 namespace OOPMokymai.P2
@@ -38,7 +39,16 @@ namespace OOPMokymai.P2
             - Jo viduje iškvieskite tėvinės klasės metodą ir papildomai atspausdinkite Gyventojas  klasės informaciją.
             Main metode sukurkite Zmogus , Pilietis, Gyventojas objektus ir kiekvienam iškvieskite į ekraną metodo Info grąžinamus duomenis
              */
-           
+
+            CharacterFactory factory = new CharacterFactory();
+            var allCharacters = factory.BuildAll();
+            foreach (var person in allCharacters)
+            {
+                Console.WriteLine($"{person.FullName} is a {person.RaceDiscriminator} {person.Gender} {person.GetType()}");
+            }
+
+
+
 
             Console.WriteLine();
             Console.WriteLine("-End of program. Press any key-");

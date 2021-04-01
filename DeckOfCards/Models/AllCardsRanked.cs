@@ -6,7 +6,7 @@ namespace DeckOfCards.Models
 {
     public class AllCardsRanked
     {
-        public virtual CardRank Two => new CardRank("Two", 2);
+        public virtual CardRank Two => new CardRank("Two", 2); // string keiciu i enum
         public virtual CardRank Three => new CardRank("Three", 3);
         public virtual CardRank Four => new CardRank("Four", 4);
         public virtual CardRank Five => new CardRank("Five", 5);

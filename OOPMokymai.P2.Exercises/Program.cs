@@ -1,4 +1,6 @@
 ﻿using OOPMokymai.P2.Exercises.Models;
+using OOPSchool.P2.Exercises;
+using OOPSchool.P2.Exercises.Interfaces;
 using System;
 
 namespace OOPMokymai.P2.Exercises
@@ -16,7 +18,8 @@ namespace OOPMokymai.P2.Exercises
             gyventojas.Info();
             Console.WriteLine("----------------------------------");
 
-            
+            IMatematika skaicius = new Skaicius(2);
+            Console.WriteLine(skaicius.Prideti(2));
 
             Console.WriteLine("-= End of program. Press any key to close =-");
             Console.ReadKey();

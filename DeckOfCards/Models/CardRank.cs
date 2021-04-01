@@ -6,13 +6,13 @@ namespace DeckOfCards.Models
 {
     public class CardRank
     {
-        public CardRank(string name, int rankNumber)
+        public CardRank(string cardName, int rankNumber)
         {
-            Name = name;
+            CardName = cardName;
             RankNumber = rankNumber;
         }
 
-        public string Name { get; set; }
+        public string CardName { get; set; }
         public int RankNumber { get; set; }
     }
 }

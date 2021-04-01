@@ -9,9 +9,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPSchool.P2", "OOPMokymai.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPSchool.P2.Exercises", "OOPMokymai.P2.Exercises\OOPSchool.P2.Exercises.csproj", "{69AA8B62-28FF-465C-9201-E0E63402B045}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckOfCards", "DeckOfCards\DeckOfCards.csproj", "{2AFB9AD4-80E5-487A-9279-720338DD618D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeckOfCards", "DeckOfCards\DeckOfCards.csproj", "{2AFB9AD4-80E5-487A-9279-720338DD618D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardWarGame", "CardWarGame\CardWarGame.csproj", "{36B48A50-F74E-4F91-B945-13C634E4713F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardWarGame", "CardWarGame\CardWarGame.csproj", "{36B48A50-F74E-4F91-B945-13C634E4713F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPSchool.P3", "OOPSchool.P3\OOPSchool.P3.csproj", "{72D48B7A-435C-4206-9E05-9229B0330136}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardGame", "CardGame\CardGame.csproj", "{0D963744-4BDA-4A52-AE7F-5329735C0536}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2AFB9AD4-80E5-487A-9279-720338DD618D} = {2AFB9AD4-80E5-487A-9279-720338DD618D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPSchool.LINQ", "OOPSchool.LINQ\OOPSchool.LINQ.csproj", "{F69C9798-E8BB-4186-A532-66C23354902A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +48,18 @@ Global
 		{36B48A50-F74E-4F91-B945-13C634E4713F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36B48A50-F74E-4F91-B945-13C634E4713F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36B48A50-F74E-4F91-B945-13C634E4713F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72D48B7A-435C-4206-9E05-9229B0330136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72D48B7A-435C-4206-9E05-9229B0330136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72D48B7A-435C-4206-9E05-9229B0330136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72D48B7A-435C-4206-9E05-9229B0330136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D963744-4BDA-4A52-AE7F-5329735C0536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D963744-4BDA-4A52-AE7F-5329735C0536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D963744-4BDA-4A52-AE7F-5329735C0536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D963744-4BDA-4A52-AE7F-5329735C0536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F69C9798-E8BB-4186-A532-66C23354902A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F69C9798-E8BB-4186-A532-66C23354902A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F69C9798-E8BB-4186-A532-66C23354902A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F69C9798-E8BB-4186-A532-66C23354902A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

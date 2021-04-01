@@ -7,11 +7,6 @@ namespace DeckOfCards.Models
 {
     public class Card
     {
-        public Card()
-        {
-
-        }
-
         public Card(ECardSuite suite, CardRank rank)
         {
             Suite = suite;
