@@ -37,17 +37,14 @@ namespace OOPSchool.LINQ
         {
             GenerateArray();
             var negativeNumbers = numbers01.Count(n => n < 0);
-            Console.WriteLine($"There are {negativeNumbers} positive numbers");
+            Console.WriteLine($"There are {negativeNumbers} negative numbers");
         }
         public void CompareAndPrintHigherQuantity()
         {
+            GenerateArray();
             if (positiveNumbers - negativeNumbers == 0) Console.WriteLine("Po lygiai");
             else if (positiveNumbers > negativeNumbers) Console.WriteLine("Teigiamu daugiau");
-            else Console.WriteLine("Neigiamu daugiau");
-
-
-
-            
+            else Console.WriteLine("Neigiamu daugiau");            
         }
     }
 }
