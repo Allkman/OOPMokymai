@@ -11,29 +11,25 @@ namespace OOPSchool.P2.Services
 {
     public class CharacterFactory
     {
-        public IEnumerable<RaceBase> BuildAll()//su siuo ienumerable galiu pasidaryti ar list ar aray ar dictionary
+        public IEnumerable<RaceBase> BildAll()
         {
-            //yield instead of = new List<>
             foreach (var race in RaceInitialData.DataSeed)
             {
-
-                //TODO logic
-                yield return Build(race); //TODO return
+                yield return Build(race);
             }
         }
 
-        protected RaceBase Build(RaceDTO race)
+        protected RaceBase Build(RaceDto race)
         {
             Dictionary<string, IRaceFactory> strategy = new Dictionary<string, IRaceFactory>
             {
-                {RaceClassificators.HUMAN, new HumanFactory() },
-                {RaceClassificators.KREE, new KreeFactory() },
-                {RaceClassificators.ARTIFICIAL, new ArtificialFactory() },
+                { RaceClassificators.HUMAN, new HumanFactory() },
+                { RaceClassificators.KREE, new KreeFactory() },
+                { RaceClassificators.ARTIFICIAL, new ArtificialLifeFactory() },
             };
             var character = strategy[race.RaceDiscriminator].Build(race);
-
             return character;
         }
-        
+
     }
 }

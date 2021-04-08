@@ -7,13 +7,16 @@ namespace OOPSchool.P2.Services
 {
     public class ArtificialFactory : IRaceFactory
     {
-        public RaceBase Build(RaceDTO race)
+        public RaceBase Build(RaceDto race)
         {
-            if (race.Gender == )
+            if (race.Gender == (int)EArtificialLifeGender.ROBOT)
             {
-
+                return new Robot(race.Id, race.FirstName, race.LastName);
             }
-            return new Human(race.Id, race.FirstName, race.LastName, race.Gender);
+            else
+            {
+                return new Artificial(race.Id, race.FirstName, race.Gender);
+            }
         }
     }
 }
